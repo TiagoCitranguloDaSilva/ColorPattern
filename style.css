@@ -87,6 +87,7 @@ main{
     color: white;
     font-weight: bold;
     font-size: 1.8em;
+    z-index: 1;
 }
 
 #wrong{
@@ -99,6 +100,7 @@ main{
     right: 0;
     bottom: 0;
     backdrop-filter: blur(10px);
+    z-index: 2;
 }
 
 #containerWrong{
@@ -165,6 +167,7 @@ main{
     right: 0;
     bottom: 0;
     backdrop-filter: blur(10px);
+    z-index: 2;
 }
 
 #interfaceMenu{

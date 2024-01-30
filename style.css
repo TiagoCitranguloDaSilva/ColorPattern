@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'wrongTitle';
+    src: url('Anton/Anton-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --colorSquareSize: 200px;
+}
+
+body{
+    background-color: rgb(182, 255, 250);
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameSpace{
+    background-color: rgb(15, 15, 15);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    border: 15px solid black;
+    border-radius: 5px;
+}
+
+.colorButton{
+    width: var(--colorSquareSize);
+    height: var(--colorSquareSize);
+    cursor: pointer;
+}
+
+#red{
+    background-color: #7e0000;
+}
+
+#blue{
+    background-color: #00007e;
+}
+
+#yellow{
+    background-color: #959500;
+}
+
+#green{
+    background-color: #007e00;
+}
+
+.redLight{
+    background: radial-gradient(#ff0000, transparent), #7e0000 !important;
+}
+
+.greenLight{
+    background: radial-gradient(#00ff00, transparent), #007e00 !important;
+}
+
+.yellowLight{
+    background: radial-gradient(#ffff00, transparent), #959500 !important;
+}
+
+.blueLight{
+    background: radial-gradient(#0000ff, transparent), #00007e !important;
+}
+
+#contRodadas{
+    padding: 15px;
+    background-color: rgb(255, 187, 62);
+    border-radius: 3px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+#wrong{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+}
+
+#containerWrong{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#interfaceWrong{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 500px;
+    background-color: rgb(236, 236, 236);
+    width: 500px;
+    border: 10px solid lightgray;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .09);
+}
+
+#msg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: black;
+
+}
+
+#button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button button{
+    background-color: gray;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 200px;
+    height: 60px;
+    border: 5px solid darkgray;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .18);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button button:hover{
+    transform: scale(110%);
+    transition: .3s;
+}
+
+#menu{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+}
+
+#interfaceMenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

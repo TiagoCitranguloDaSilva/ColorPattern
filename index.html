@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Pattern</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="colorPatternIcon.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div id="menu">
+            <div id="interfaceMenu">
+                <div class="button">
+                    <button onclick="startGame()">Começar</button>
+                </div>
+            </div>
+        </div>
+        <div id="contRodadas"></div>
+        <div id="gameSpace">
+            <div class="colorButton" id="red" onclick="selected('red')"></div>
+            <div class="colorButton" id="green" onclick="selected('green')"></div>
+            <div class="colorButton" id="yellow" onclick="selected('yellow')"></div>
+            <div class="colorButton" id="blue" onclick="selected('blue')"></div>
+        </div>
+        <div id="wrong">
+            <div id="containerWrong">
+                <div id="interfaceWrong">
+                    <div id="msg">
+                        <p></p>
+                    </div>
+                    <div id="button">
+                        <button onclick="startGame()">Tentar novamente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="code.js"></script>
+</body>
+</html>

@@ -15,7 +15,7 @@
 }
 
 body{
-    background-color: rgb(182, 255, 250);
+    background-color: rgb(197, 255, 251);
     width: 100vw;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,7 +50,7 @@ main{
 }
 
 #blue{
-    background-color: #00007e;
+    background-color: #000060;
 }
 
 #yellow{
@@ -74,7 +74,7 @@ main{
 }
 
 .blueLight{
-    background: radial-gradient(#0000ff, transparent), #00007e !important;
+    background: radial-gradient(#0000ff, transparent), #000060 !important;
 }
 
 #contRodadas{

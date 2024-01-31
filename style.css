@@ -177,3 +177,45 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+@media (width < 470px) {
+
+    #gameSpace{
+        width: 100vw;
+        height: 100vw;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+
+    .colorButton{
+        width: auto;
+        height: auto;
+    }
+
+    #interfaceWrong{
+        width: 100vw;
+        height: min-content;
+        row-gap: 100px;
+    }
+}
+
+@media (height < 470px){
+
+    #gameSpace{
+        width: 100vh;
+        height: 100vh;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+
+    .colorButton{
+        width: auto;
+        height: auto;
+    }
+
+    #interfaceWrong{
+        width: 100vh;
+        height: min-content;
+        row-gap: 100px;
+    }
+}
